@@ -1,0 +1,2 @@
+Options +ExecCGI
+AddHandler fcgi-script .fcgi
