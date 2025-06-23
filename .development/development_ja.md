@@ -106,7 +106,7 @@ https://evodictordb.hgc.jp/cgi-bin/project_2.fcgi
 
 | ログ種別          | パス例                                                       |
 |-------------------|--------------------------------------------------------------|
-| Flask ログ        | `/tmp/minimal_fcgi.log` または `/tmp/projectname_fcgi.log` |
+| Flask ログ        | `/tmp/minimal_fcgi.log` または `/tmp/<projectname>_fcgi.log` |
 | Apache エラーログ | `/usr/local/package/apache/logs/evodictordb_error_log`      |
 
 ---
@@ -114,7 +114,9 @@ https://evodictordb.hgc.jp/cgi-bin/project_2.fcgi
 ## ✅ 状態確認コマンド例
 
 ```bash
-ps aux | grep run_fcgi.py
+$ ssh hgcevo 
+$ ssh evodictordb.hgc.jp # sshした先で2段階目のssh
+$ ps aux | grep run_fcgi.py
 ```
 
 ---
