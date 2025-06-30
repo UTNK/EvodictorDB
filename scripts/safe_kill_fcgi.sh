@@ -5,7 +5,7 @@
 
 # === Configuration (change as needed) ===
 
-APP_NAME_LIST="EvodictorDB TaxoniumPhylomap minimal"
+APP_NAME_LIST="EvodictorDB-AMR TaxoniumPhylomap minimal"
 
 for APP_NAME in $APP_NAME_LIST; do
 
